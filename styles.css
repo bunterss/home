@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Fondo claro */
+    color: #000; /* Texto negro */
+}
+
+header {
+    background-color: #2196F3; /* Azul */
+    color: white;
+    text-align: center;
+    padding: 16px 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+.menu {
+    background-color: #1976D2; /* Azul más oscuro */
+    padding: 10px 0;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.5s ease; /* Transición más lenta para el hover */
+}
+
+.menu a:hover {
+    background-color: #1565C0; /* Hover en azul más oscuro */
+    border-radius: 5px;
+}
+
+main {
+    padding: 20px;
+}
+
+.recipe {
+    border: 1px solid #ddd; /* Borde gris claro */
+    border-radius: 5px;
+    background-color: #fff; /* Fondo blanco */
+    display: flex; /* Usar flexbox para alinear contenido */
+    margin-bottom: 20px;
+    padding: 20px;
+    transition: transform 1s, box-shadow 1s; /* Aumentar la duración de la transición al hover */
+}
+
+.recipe:hover {
+    transform: translateY(-3px); /* Elevar ligeramente al pasar el mouse */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra al hover */
+}
+
+.recipe-content {
+    flex: 1; /* Ocupar espacio disponible */
+    margin-right: 20px; /* Espacio entre texto e imagen */
+}
+
+.recipe img {
+    width: 300px; /* Ajusta este valor al ancho deseado */
+    height: auto; /* Eliminar el height fijo */
+    max-width: none; /* Evita el ajuste al ancho del contenedor */
+    object-fit: contain; /* Mantiene la imagen proporcional */
+    border-radius: 5px; /* Bordes redondeados en la imagen */
+}
+
+h2 {
+    color: #2196F3; /* Azul para el título de la receta */
+    margin-bottom: 10px; /* Espacio debajo del título */
+}
+
+h3 {
+    color: #000; /* Negro para subtítulos */
+}
+
+ul, ol {
+    padding-left: 20px;
+    margin: 10px 0; /* Espacio arriba y abajo de listas */
+}
+
+/* Estilos de la preparación */
+.preparacion {
+    display: none; /* Ocultar preparación inicialmente */
+    transition: opacity 0.5s ease; /* Transición para la opacidad */
+    opacity: 0; /* Opacidad inicial */
+}
+
+.recipe:hover .preparacion {
+    display: block; /* Mostrar preparación al hacer hover */
+    margin-top: 10px; /* Espacio encima de la preparación */
+    opacity: 1; /* Cambiar opacidad a 1 al hacer hover */
+}
+
+.scroll-to-top {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center; /* Centrar texto */
+}
+
+.scroll-to-top:hover {
+    background-color: #388E3C; /* Hover en verde más oscuro */
+}
+
+footer {
+    background-color: #2196F3; /* Azul */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px; /* Espacio encima del pie de página */
+}
